@@ -1,4 +1,9 @@
 <?php
+
+if (!defined('ABSPATH')) {
+    die;
+}
+
 //Hook into order completion event
 add_action('woocommerce_order_status_completed', 'trigger_code_on_order_completion');
 
