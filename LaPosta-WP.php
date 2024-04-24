@@ -17,3 +17,13 @@ License: MIT
 if (!defined('ABSPATH')) {
     die;
 }
+
+if (!class_exists("LaPostaWP")) {
+
+    class LaPostaWP {
+
+    }
+    require_once plugin_dir_path(__FILE__) . 'inc/LapostaApi.php';
+
+
+}
